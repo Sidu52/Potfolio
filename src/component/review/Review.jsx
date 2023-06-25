@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from 'swiper';
 import 'swiper/swiper-bundle.min.css';
-
+import { toast } from 'react-toastify';
 import './Review.scss';
 import signature from '../../Image/Review/Signature.png';
 import { BiLogoYoutube, BiLogoInstagram } from 'react-icons/bi';
@@ -35,6 +35,11 @@ export default function Review() {
 
     async function handleReview(e) {
         e.preventDefault();
+        if (review.length >= 5) {
+            setForm({ name: "", description: "", review: "", url: "" });
+            toast.error('Review limit Reach!');
+            return;
+        }
 
         setReview([{ name: form.name, description: form.description, review: form.review, url: "" }]);
 
@@ -47,7 +52,7 @@ export default function Review() {
             url: form.url,
             createdOn: new Date()
         });
-
+        toast.success('Review add successfully!');
         setForm({ name: "", description: "", review: "", url: "" });
         setToggle(false);
     }

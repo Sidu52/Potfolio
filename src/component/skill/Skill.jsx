@@ -36,7 +36,7 @@ export default function Skill() {
                     <div className='skill__icons'>
                         <AnimatePresence>
                             {skill.map((item, index) => (
-                                <motion.div {...animations.skillicons} >
+                                <motion.div {...animations.skillicons} key={index} >
                                     <h3>{item.name}</h3>
                                     <img src={item.icon} alt="icons" />
                                     <span>

@@ -4,7 +4,7 @@ import { BiLogoLinkedin, BiLogoYoutube, BiLogoInstagram, BiLogoWhatsapp, } from 
 import { MdEmail } from 'react-icons/md';
 import './Contact.scss'
 import emailjs from 'emailjs-com';
-
+import { toast } from 'react-toastify';
 const Contact = () => {
     const [form, setForm] = useState({ name: "", email: "", companyName: "", message: "" })
     const [nameError, setNameError] = useState('');
@@ -43,11 +43,12 @@ const Contact = () => {
         // Send the email using EmailJS
         emailjs.send(serviceID, templateID, templateParams, userID)
             .then(() => {
-                console.log('Email sent successfully!');
+                toast.success('Message sent successfully!');
                 // You can display a success message or perform any other actions here
             })
             .catch((error) => {
                 console.error('Email sending failed:', error);
+                toast.error('Failed to send message.');
                 // You can display an error message or perform any other actions here
             });
         setForm({ name: "", email: "", companyName: "", message: "" })
@@ -151,20 +152,20 @@ const Contact = () => {
                         </span>
                     </ul>
                     <div className="contact__social_icon">
-                        <div class="card">
-                            <a href="https://www.linkedin.com/in/siddhantsharma9" class="socialContainer linkedin">
+                        <div className="card">
+                            <a href="https://www.linkedin.com/in/siddhantsharma9" className="socialContainer linkedin">
                                 <BiLogoLinkedin />
                             </a>
 
-                            <a href="https://www.youtube.com/@Sidhualston/featured" class="socialContainer youtube">
+                            <a href="https://www.youtube.com/@Sidhualston/featured" className="socialContainer youtube">
                                 <BiLogoYoutube />
                             </a>
 
-                            <a href="https://www.instagram.com/sidhu_alston/" class="socialContainer instagram">
+                            <a href="https://www.instagram.com/sidhu_alston/" className="socialContainer instagram">
                                 <BiLogoInstagram />
                             </a>
 
-                            <a href="https://wa.me/8085984844" class="socialContainer whatsapp">
+                            <a href="https://wa.me/8085984844" className="socialContainer whatsapp">
                                 <BiLogoWhatsapp />
                             </a>
                         </div>

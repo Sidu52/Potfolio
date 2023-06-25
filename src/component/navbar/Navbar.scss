@@ -27,7 +27,7 @@
         position: fixed;
         background-color: var(--secondary-background-color);
         backdrop-filter: blur(4px);
-        top: 14%;
+        top: 11%;
         right: 0;
         padding: var(--large-padding);
         z-index: 10;
@@ -55,12 +55,18 @@
                     top: -5px;
                     left: 50%;
                     transform: translate(-50%, 0);
+
+
                 }
 
                 .right {
                     right: 50%;
                     bottom: -5px;
                     transform: translate(50%, 0);
+                }
+
+                a {
+                    color: black;
                 }
 
                 &:hover {

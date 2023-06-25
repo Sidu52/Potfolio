@@ -6,6 +6,8 @@ import { CiDesktopMouse2 } from 'react-icons/ci'
 import { animate, motion } from "framer-motion";
 import { BiLogoLinkedin, BiLogoGithub, BiLogoYoutube, BiLogoInstagram } from 'react-icons/bi';
 import { GrFormPrevious, GrFormNext } from 'react-icons/gr';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 export default function Homebody() {
     const [toggle, setToggle] = useState(false);
     const [showButton, setShowButton] = useState(false);
@@ -80,10 +82,10 @@ export default function Homebody() {
                 <span>
                     <motion.h3 {...animations.h3}>
                         Hi. I'm
-                        <text class="text">
-                            <span class="actual-text">&nbsp;Siddhant&nbsp;</span>
-                            <span class="hover-text" aria-hidden="true">&nbsp;Siddhant&nbsp;</span>
-                        </text>
+                        <span className="text">
+                            <span className="actual-text">&nbsp;Siddhant&nbsp;</span>
+                            <span className="hover-text" aria-hidden="true">&nbsp;Siddhant&nbsp;</span>
+                        </span>
                     </motion.h3>
 
                     <motion.article {...animations.article} className='home__paragraph'>
@@ -95,26 +97,26 @@ export default function Homebody() {
                 <motion.span  {...animations.button} style={{ display: "flex", alignItems: "center", marginTop: "var(--large-margin)" }}>
                     <a href="mailto:siddhantsharma9926@gmail.com">
                         <button className='hire__button'>Hire me
-                            <div class="star star-1">
+                            <div className="star star-1">
                                 <BsFillEmojiSmileFill />
                             </div>
-                            <div class="star star-2">
-                                <BsFillEmojiSmileFill />
-
-                            </div>
-                            <div class="star star-3">
+                            <div className="star star-2">
                                 <BsFillEmojiSmileFill />
 
                             </div>
-                            <div class="star star-4">
+                            <div className="star star-3">
                                 <BsFillEmojiSmileFill />
 
                             </div>
-                            <div class="star star-5">
+                            <div className="star star-4">
                                 <BsFillEmojiSmileFill />
 
                             </div>
-                            <div class="star star-6">
+                            <div className="star star-5">
+                                <BsFillEmojiSmileFill />
+
+                            </div>
+                            <div className="star star-6">
                                 <BsFillEmojiSmileFill />
 
                             </div>
@@ -145,6 +147,7 @@ export default function Homebody() {
                 </div >
             </div >
 
+            <ToastContainer position="top-right" autoClose={3000} />
         </div >
     )
 }

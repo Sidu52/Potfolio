@@ -25,14 +25,14 @@ function Education() {
                     <h3 className="education_heading">What Did I Do</h3>
                     <div className='education__card_conatainer'>
                         {data.map((i, index) => (
-                            <motion.div key={index} class="education__card"
+                            <motion.div key={index} className="education__card"
                                 whileInView={animations.whileInView}
                                 initial={animations.one}
                                 transition={{ delay: index * 0.2 }}>
-                                <div class="card__content">
+                                <div className="card__content">
                                     <img src={i.img} alt="logo" />
                                     <h3 className="card_name">{i.course}</h3>
-                                    <p class="card__para">{i.institue_name}</p>
+                                    <p className="card__para">{i.institue_name}</p>
                                     <p className="card_date">{i.start}-{i.end}</p>
                                 </div>
                             </motion.div>

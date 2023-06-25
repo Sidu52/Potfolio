@@ -1,25 +1,21 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from 'swiper';
+import { Autoplay, Pagination } from 'swiper';
 import 'swiper/swiper-bundle.min.css';
 import data from '../../content/data.json';
 import './Project.scss'
 
-
 const slides = data.projects;
-
-
 const project = () => {
     return (
         <div id="Project" className="project__conatainer">
             <h3 className="heading">Experience || Project</h3>
             <div className="project__sub_container">
                 <Swiper
-                    modules={[Navigation, Pagination]}
-                    navigation
+                    modules={[Autoplay, Pagination]}
                     pagination={{ clickable: true }}
                     loop={true}
                     autoplay={true}
-                    delay={5000}
+                    delay={8000}
                 >
                     {slides.map((slide, index) => (
                         <SwiperSlide key={index} className="card__swiper">

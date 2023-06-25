@@ -58,16 +58,20 @@ function Navbar() {
                                 <div className="navbar__hover left" />
                                 <a
                                     href={`#${item}`}
+                                    onClick={() => setToggle(false)}
+
                                     className={`navbar__itemlink ${activeLink === item ? 'active' : ''
                                         }`}>
                                     {item}
+
                                 </a>
                                 <div className="navbar__hover right" />
                             </div>
                         ))}
                     </div>
                 </div>
-            )}
+            )
+            }
             <div className="navbar__links">
                 {navData.map((item, index) => (
                     <div className="navbar__link" key={index}>
@@ -84,7 +88,7 @@ function Navbar() {
                     </div>
                 ))}
             </div>
-        </div>
+        </div >
     );
 }
 
