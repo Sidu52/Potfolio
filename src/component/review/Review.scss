@@ -1,0 +1,190 @@
+.review__container {
+    background: var(--secondary-background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .review__sub_conrainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 35px 15px;
+        width: 70%;
+
+        .review__card_container {
+            background: white;
+            padding: 5%;
+            width: 100%;
+
+            .review__form {
+                margin: 5%;
+
+                >form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    width: 30%;
+
+                    >input,
+                    >textarea {
+                        padding: 10px;
+                        border-radius: 15px;
+                        outline: none;
+
+                    }
+
+                    >button {
+                        padding: 5px;
+                        border-radius: 15px;
+                        font-weight: 700;
+                        border: 1px solid var(--secondary-color);
+                        background: transparent;
+
+                        &:hover {
+                            background: var(--secondary-color);
+                            color: white;
+                            border: none;
+                            transition: all 0.3s linear;
+                        }
+                    }
+
+                }
+
+            }
+
+            .review__form_button {
+                padding: 5px;
+                border-radius: 10px;
+                border: none;
+                font-weight: 600;
+                background: var(--secondary-color);
+                box-shadow: 0 0 10px var(--secondary-color);
+                margin: 10px;
+                color: white;
+                transition: all 0.3s linear;
+
+                &:hover {
+                    background: transparent;
+                    color: var(--secondary-color);
+                    border: 1px solid var(--secondary-color);
+                    box-shadow: 0 0 50px var(--secondary-color);
+                }
+            }
+        }
+
+        >h3 {
+            color: var(--secondary-color);
+            font-size: var(--extra-large-font-size);
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--accent-color);
+        }
+
+        .review__card {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            word-break: break-all;
+
+            .review__card_profile {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .review__profile_detail {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                    }
+
+                }
+
+                .review__card_detail {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+
+
+
+                }
+
+                .review__social_icons {
+                    display: flex;
+                    gap: 15px;
+
+                    >a {
+                        font-size: 2rem;
+                        border-radius: 50%;
+                        padding: 5px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    .youtube {
+
+
+
+                        color: #fff;
+                        background-color: #fd1853;
+
+                        &:hover {
+                            animation: bounce_613 0.4s linear;
+                        }
+
+
+                    }
+
+                    .instagram {
+
+                        color: #fff;
+                        background: #f09433;
+                        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+                        background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+                        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+                        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+
+                        &:hover {
+                            animation: bounce_613 0.4s linear;
+                        }
+                    }
+
+                    @keyframes bounce_613 {
+                        40% {
+                            transform: scale(1.4);
+                        }
+
+                        60% {
+                            transform: scale(0.8);
+                        }
+
+                        80% {
+                            transform: scale(1.2);
+                        }
+
+                        100% {
+                            transform: scale(1);
+                        }
+                    }
+
+                    @media (max-width:420px) {
+                        position: absolute;
+                        bottom: -32px;
+
+                    }
+                }
+            }
+
+        }
+
+        .review__social_icon {
+            display: flex;
+            gap: 10px;
+        }
+    }
+}

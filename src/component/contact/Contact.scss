@@ -1,0 +1,235 @@
+.contact__container {
+    background-color: var(--background-color);
+}
+
+div.contact_form_container {
+    background-color: var(--secondary-background-color);
+}
+
+.submit-btn {
+    float: left;
+}
+
+.reset-btn {
+    float: right;
+}
+
+.form-headline:after {
+    content: "";
+    display: block;
+    width: 10%;
+    padding-top: 10px;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.highlight-text {
+    color: var(--secondary-color);
+}
+
+.hightlight-contact-info {
+    font-weight: 700;
+    font-size: var(--large-font-size);
+    line-height: 1.5;
+}
+
+.highlight-text-grey {
+    font-weight: 500;
+}
+
+.email-info {
+    margin-top: var(--large-margin);
+}
+
+::-webkit-input-placeholder {
+    font-family: 'Roboto', sans-serif;
+}
+
+.required-input {
+    color: black;
+}
+
+h3 {
+    margin-bottom: 1rem;
+}
+
+.form-input:focus,
+textarea:focus {
+    outline: 1.5px solid var(--secondary-color);
+}
+
+.form-input,
+textarea {
+    width: 100%;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+}
+
+.contact__sub_container>* {
+    padding: 1em;
+}
+
+
+
+@media (min-width: 700px) {
+    .contact__sub_container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .contact__sub_container>* {
+        padding: 2em 2em;
+    }
+}
+
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contacts {
+    color: #212d31;
+}
+
+.contact_form_container {
+    background: var(--background-color);
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+form label {
+    display: block;
+}
+
+form p {
+    margin: 0;
+}
+
+.full-width {
+    grid-column: 1 / 3;
+}
+
+button,
+.submit-btn,
+.form-input,
+textarea {
+    padding: 1em;
+}
+
+button,
+.submit-btn {
+    background: transparent;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    padding: 5px 20px;
+    text-transform: uppercase;
+}
+
+button:hover,
+.submit-btn:hover,
+button:focus,
+.submit-btn:focus {
+    background: var(--secondary-color);
+    outline: 0;
+    color: #fff;
+}
+
+.error {
+    color: #ec1c24;
+}
+
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+}
+
+/* for all social containers*/
+.socialContainer {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--small-padding);
+    font-size: 40px;
+    border-radius: 50%;
+    animation: slide-in-top 0.3s both;
+}
+
+/* instagram*/
+.instagram:hover {
+    color: #fff;
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    transition-duration: .3s;
+}
+
+/* linkdin*/
+.linkedin:hover {
+    color: white;
+    background-color: #00acee;
+    transition-duration: .3s;
+}
+
+/* Youtube*/
+.youtube:hover {
+    color: #fff;
+    background-color: #fd1853;
+    transition-duration: .3s;
+}
+
+/* Whatsapp*/
+.whatsapp:hover {
+    color: white;
+    background-color: rgb(1, 173, 1);
+    transition-duration: .3s;
+}
+
+@keyframes slide-in-top {
+
+    40% {
+        transform: scale(1.4);
+    }
+
+    60% {
+        transform: scale(0.8);
+    }
+
+    80% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (min-width: 50px) and (max-width: 350px) {
+    .email-info {
+        font-size: 15px;
+        word-break: break-all;
+    }
+
+    .card {
+        padding: 25px 10px;
+        gap: 10px;
+
+        @media (min-width: 50px) and (max-width: 250px) {
+            flex-direction: column;
+        }
+
+    }
+
+}

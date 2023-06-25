@@ -1,0 +1,107 @@
+.project__conatainer {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .heading {
+        color: var(--secondary-color);
+        font-size: var(--extra-large-font-size);
+        margin-bottom: var(--large-margin);
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--accent-color);
+    }
+}
+
+.project__sub_container {
+    background-color: var(--secondary-background-color);
+    width: 70%;
+}
+
+.card__swiper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: var(--small-padding) var(--extra-large-padding);
+    margin-bottom: 30px;
+
+}
+
+.detail__container {
+
+    line-height: 2;
+}
+
+.image__container img {
+    width: 250px;
+    height: 250px;
+}
+
+.button__conatainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: var(--extra-large-margin);
+
+    .button {
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        width: 90px;
+        font-weight: 500;
+        transition: all 0.3s linear;
+    }
+
+    .git__button {
+        color: white;
+        background: black;
+
+        &:hover {
+            color: #000;
+            background-color: transparent;
+            border: 1px solid #000;
+            box-shadow: 1px 1px 50px black;
+        }
+    }
+
+    .live__button {
+        color: white;
+        background: var(--secondary-color);
+
+        &:hover {
+            color: var(--secondary-color);
+            background-color: transparent;
+            border: 1px solid var(--secondary-color);
+            box-shadow: 1px 1px 50px var(--secondary-color);
+        }
+
+    }
+
+
+}
+
+
+@media (max-width:767px) {
+    .card__swiper {
+        flex-direction: column;
+    }
+
+    .image__container {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:400px) {
+    .project__sub_container {
+        width: 90%;
+    }
+
+    .card__swiper {
+        padding: 0;
+    }
+}

@@ -1,0 +1,60 @@
+
+{
+    "projects": [
+      {
+        "id":0,
+        "date": "March-2023",
+        "title": "Alston Social Media ",
+        "description": "This project is a some-featured social media website that allows users to create posts, including photos, videos, and blog posts and It includes features such as the ability to like and comment on posts, as well as a Reels feature similar to Instagram Additionally, it features a real-time chat box for users to engage in conversations with one another.",
+        "Live":"https://alston-social-media-u0hk.onrender.com",
+        "url": "https://github.com/Sidu52/Alston_Social_Media.git",
+        "imgSrc": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+      },
+  
+      {
+        "id":1,
+        "date": "Feb-2023",
+        "title": "Nodejs Authentication",
+        "description": "Developed a Login Authentication system that allows users to create accounts, reset passwords, and verify their email addresses, improving security and Deployed the Login Authentication project on Render, a cloud platform that provides scalable and reliable hosting services.",
+        "Live":"https://node-js-authenticated-mm9b.onrender.com",
+        "url": "https://github.com/Sidu52/Nodejs-Authentication.git",
+        "imgSrc": "https://i.ytimg.com/vi/fDLj_8cxkSg/maxresdefault.jpg"
+      },
+      {
+        "id":2,
+        "date": "Nov-2022",
+        "title": "Stick Ninjas Game",
+        "description": "The player controls the stick ninja character using Mouse or Keyboard and the game has visually appealing graphics like tree mountain raining sky etc. with stick figure animationsUse HTML canvas to create dynamic backgrounds, allowing players to navigate through different environments  ",
+        "Live":"https://stickninjasgame.netlify.app",
+        "url": "https://github.com/Sidu52/Stick-ninja-game.git",
+        "imgSrc": "https://i.ytimg.com/vi/j8by68Md8lQ/maxresdefault.jpg"
+      },
+  
+      {
+        "id":3,
+        "date": "Dec-2022",
+        "title": "Habit Tracker",
+        "description": "habit tracker app allows users to add and track their habits effectively. Users can create new habits by providing details such as habit name, frequency, and start date.Each Habit has a 3 stage Done, Not_Done, Panding and  Users can choose to track habits daily, weekly, or on specific days of the week.habit tracker app features a user-friendly interface that makes it easy for users to navigate, add, update, and delete habits.and The app utilizes Node.js, Express, and Mongoose ",
+        "Live":"https://habbit-app-x1zc.onrender.com",
+        "url": "https://github.com/Sidu52/Habit-Api.git",
+        "imgSrc": "https://images.unsplash.com/photo-1569230919100-d3fd5e1132f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=736&q=80"
+      },
+      {
+        "id":4,
+        "date": "Apr-2023",
+        "title": "Astrology Website",
+        "description": "The website boasts a user-friendly interface, designed with a modern and intuitive layout.Built using ReactJS, your astrology website is fully responsive, adapting seamlessly to different screen sizes and resolutions, including desktops, laptops, tablets, and mobile devices.This is a Frontend full working WebPage",
+        "url": "https://github.com/Sidu52/guruji_FrontEnd.git",
+        "Live":"https://fancy-panda-a64f0d.netlify.app",
+        "imgSrc": "https://images.unsplash.com/photo-1515942661900-94b3d1972591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+      },{
+        "id":5,
+        "date": "May-2023",
+        "title": "CO-Buddy",
+        "description": "This is Co Buddy, a website designed to help people during their travels. Please note that the website is currently a work in progress and not fully functional.",
+        "url": "https://github.com/Sidu52/CO-Buddy_FrontEnd.git",
+        "Live":"https://papaya-sawine-659a15.netlify.app/",
+        "imgSrc": "https://ik.imgkit.net/3vlqs5axxjf/PCWW/uploadedImages/Articles/From_Our_Partners/2022/December/expedia%20sponsored%20tvi%20article.jpg?tr=w-600%2Ch-300%2Cfo-auto"
+      }
+    ]
+  }

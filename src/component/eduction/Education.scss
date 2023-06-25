@@ -1,0 +1,135 @@
+.education {
+    position: fixed;
+    top: 0;
+    z-index: -3;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+    object-fit: cover;
+}
+
+.empty__container {
+    width: 100%;
+    height: 500px;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+
+    .smoke__effect {
+        position: absolute;
+        top: -83px;
+        left: -101px;
+        width: 482px;
+        height: 653px;
+        background-image: linear-gradient(135deg, #F4F6F9 9%, rgba(255, 255, 255, 0) 70%);
+        opacity: 1;
+        border-radius: 50%;
+    }
+}
+
+.education__container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    gap: 65px;
+
+    .education__sub_container {
+        // background: var(--secondary-background-color);
+        margin: var(--large-margin);
+        width: 80%;
+    }
+
+    .education_heading {
+        margin-top: var(--large-margin);
+        margin-left: var(--large-margin);
+        font-size: var(--extra-large-font-size);
+        text-transform: capitalize;
+    }
+
+    .education__card_conatainer {
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        margin: var(--extra-large-margin);
+
+        .education__card {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 320px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            padding: 32px;
+            overflow: hidden;
+            border-radius: 10px;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+
+            .card__content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                color: rgb(44, 44, 44);
+                padding: var(--large-padding);
+                transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+
+                >img {
+                    width: 80px;
+                    height: 80px;
+                }
+
+                .card__heading {
+                    font-weight: 700;
+                    font-size: 32px;
+                }
+
+                .card__para {
+                    line-height: 1.5;
+                }
+
+                .card_date {
+                    color: rgb(159, 157, 157);
+                }
+
+
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 5px;
+
+                z-index: -1;
+                transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+            }
+
+            &:hover {
+
+                background: linear-gradient(-45deg, rgb(162, 192, 195), rgb(163, 235, 235) 100%);
+                box-shadow: none;
+
+
+
+            }
+
+        }
+    }
+
+    @media (max-width:767px) {
+        .education__card_conatainer {
+            flex-direction: column;
+            margin: 0;
+        }
+    }
+
+}

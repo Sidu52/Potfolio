@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;1,200&family=Roboto:wght@100;300;400;500;700&display=swap');
+:root {
+  /* Colors */
+  --primary-color: #ff7a3d;
+  --secondary-color: #fe5101;
+  --accent-color: #575351;
+  --text-color: #1e1911;
+  --background-color: #f8f8f8;
+  --secondary-background-color: #f8f2f2;
+
+  /* Backgrounds */
+  --header-background: #f2f2f2;
+  --footer-background: #eaeaea;
+
+  /* Font Sizes */
+  --small-font-size: 12px;
+  --medium-font-size: 16px;
+  --large-font-size: 20px;
+  --extra-large-font-size: 40px;
+
+  /* Paddings */
+  --small-padding: 5px;
+  --medium-padding: 10px;
+  --large-padding: 20px;
+  --extra-large-padding: 60px;
+
+  /* Margins */
+  --small-margin: 5px;
+  --medium-margin: 10px;
+  --large-margin: 20px;
+  --extra-large-margin: 40px;
+}
+ 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
