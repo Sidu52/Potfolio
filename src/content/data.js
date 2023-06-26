@@ -13,7 +13,7 @@ const data = [
     {
         img: college,
         course: "BSC Computer Science",
-        institue_name: "Jiwaji Univercity",
+        institue_name: "Jiwaji University",
         start: "jun 2019",
         end: "July 2022",
 
