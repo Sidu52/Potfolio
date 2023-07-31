@@ -123,7 +123,7 @@ export default function Homebody() {
                         </button>
                     </a>
 
-                    <a href="https://drive.google.com/file/d/1tnYkzcIXLc3KUBNYLNUfUt3IKsRp0qpa/view?usp=sharing">
+                    <a href="https://drive.google.com/file/d/1DYuvjGcWqEXskIKF7c14rc8AQiyRy96-/view?usp=drive_link">
                         <div className='resume__button'>
                             <div className="button__text">Get CV</div>
                         </div>
