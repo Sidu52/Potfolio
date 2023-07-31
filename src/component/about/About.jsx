@@ -35,7 +35,7 @@ function About() {
                         databases such as MongoDB. I am committed to delivering high-quality code that meets business
                         requirements. I am eager to utilize my skills and experience to contribute to a dynamic team in the
                         field of web development.</article>
-                    <a href="https://drive.google.com/file/d/1tnYkzcIXLc3KUBNYLNUfUt3IKsRp0qpa/view?usp=sharing"><button className='about__button'>Download Resume</button></a>
+                    <a href="https://drive.google.com/file/d/1DYuvjGcWqEXskIKF7c14rc8AQiyRy96-/view?usp=drive_link"><button className='about__button'>Download Resume</button></a>
 
                 </div>
             </div >
