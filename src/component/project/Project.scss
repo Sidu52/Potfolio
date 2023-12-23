@@ -1,0 +1,101 @@
+#Project {
+    background: var(--bacground);
+}
+
+.project__conatainer {
+    .Project__heading {
+        font-weight: var(--bold);
+        font-size: var(--extra-big-large-font-size);
+        font-family: var(--font-family-heading);
+        color: var(--heading-primary-color);
+        border-bottom: 1px solid var(--small-heading-color);
+    }
+
+    .project__sub_container {
+        padding: 50px 0;
+
+        .project_detail__container {
+            .heding {
+                color: var(--sub-heading-color);
+                font-size: var(--extra-large-font-size);
+                font-weight: var(--bold);
+                font-family: var(--font-family-subheading);
+            }
+
+            .Article {
+                color: var(--small-heading-color);
+                line-height: 2;
+                font-family: var(--font-family-subheading);
+            }
+
+            .button__conatainer {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                margin-top: var(--extra-large-margin);
+                font-family: var(--font-family-subheading);
+
+                .button {
+                    padding: 10px;
+                    border-radius: 10px;
+                    border: none;
+                    width: 90px;
+                    font-weight: 500;
+                    transition: all 0.3s linear;
+                }
+
+                .git__button {
+                    color: white;
+                    background: black;
+                    font-family: var(--font-family-subheading);
+
+                    &:hover {
+                        color: #000;
+                        background-color: transparent;
+                        border: 1px solid #000;
+                        box-shadow: 1px 1px 50px black;
+                    }
+                }
+
+                .live__button {
+                    color: white;
+                    font-family: var(--font-family-subheading);
+
+                    &:hover {
+                        color: var(--secondary-color);
+                        background-color: transparent;
+                        border: 1px solid var(--secondary-color);
+                        box-shadow: 1px 1px 50px var(--secondary-color);
+                    }
+
+                }
+
+            }
+        }
+
+        .project__slider_box {
+            z-index: 1;
+            background-color: var(--heading-primary-color);
+
+            .slider_button {
+                color: var(--sub-heading-color);
+                background-color: var(--heading-primary-color);
+                backface-visibility: 2px;
+                font-family: var(--font-family-subheading);
+
+            }
+        }
+    }
+
+    @media (max-width:600px) {
+        .Project__heading {
+            font-size: var(--extra-large-font-size);
+        }
+    }
+
+    @media (max-width:400px) {
+        .Project__heading {
+            font-size: var(--large-font-size);
+        }
+    }
+}

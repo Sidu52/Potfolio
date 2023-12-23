@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Background theme */
+  --bacground: #222222;
+  --secoundry-background:#333333;
+
+  /* Heading  */
+  --heading-primary-color: #0149fe;
+  --heading--secondary-color: #3daeff;
+  --sub-heading-color:#fff;
+  --small-heading-color:#939393;
+
+  /* Font Family */
+  --font-family-heading:'Playfair Display', serif;
+  --font-family-subheading:'Source Sans 3', sans-serif;
+  
+
+  /* Font Sizes */
+  --extra-small-font-size: 8px;
+  --small-font-size: 12px;
+  --medium-font-size: 16px;
+  --large-font-size: 25px;
+  --extra-large-font-size: 40px;
+  --extra-big-large-font-size: 60px;
+
+   /* Font Weight */
+   --extra-semi-bold: 300;
+   --semi-bold: 400;
+   --bold: 500;
+   --extra-bold: 600;
+   --extra-dark-bold: 700;
+
+  /* Paddings */
+  --small-padding: 5px;
+  --medium-padding: 10px;
+  --large-padding: 20px;
+  --extra-large-padding: 60px;
+
+  /* Margins */
+  --small-margin: 5px;
+  --medium-margin: 10px;
+  --large-margin: 20px;
+  --extra-large-margin: 40px;
+}
+ 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+

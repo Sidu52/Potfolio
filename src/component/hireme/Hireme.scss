@@ -1,0 +1,17 @@
+.hireme_container {
+    background: var(--secoundry-background);
+}
+
+.hireme_heading {
+    font-size: 90px;
+    margin: 30px 0;
+    color: var(--heading--secondary-color);
+    font-weight: var(--bold);
+
+}
+
+@media (max-width:600px) {
+    .hireme_heading {
+        font-size: 60px;
+    }
+}
