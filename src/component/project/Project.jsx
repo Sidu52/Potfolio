@@ -1,11 +1,25 @@
+import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from 'swiper';
+import { FaAngleLeft, FaChevronRight } from "react-icons/fa";
 import 'swiper/swiper-bundle.min.css';
 import data from '../../content/data.json';
 import './Project.scss'
-
-const slides = data.projects;
 const project = () => {
+    const imageSwiper = useRef(null);
+    const detailSwiper = useRef(null);
+
+    const slides = data.projects;
+
+    const handleNext = () => {
+        imageSwiper.current.swiper.slideNext();
+        detailSwiper.current.swiper.slideNext();
+    };
+
+    const handlePrev = () => {
+        imageSwiper.current.swiper.slidePrev();
+        detailSwiper.current.swiper.slidePrev();
+    };
     return (
         <div id="Project" >
             <div className="project__conatainer w-11/12 m-auto">
@@ -13,10 +27,12 @@ const project = () => {
 
                 <div className="project__sub_container flex gap-2 w-4/5 max-md:w-full m-auto max-sm:hidden">
                     <Swiper
+                        ref={imageSwiper}
                         modules={[Autoplay]}
                         loop={true}
                         autoplay={true}
                         delay={8000}
+                        allowTouchMove={false}
                         className="w-2/4"
                     >
                         {slides.map((slide, index) => (
@@ -30,15 +46,21 @@ const project = () => {
 
                         ))}
                     </Swiper>
-                    <div className="project__slider_box flex items-center justify-center bg-gray-200 p-5 relative">
-                        <button className="slider_button px-2 py-1 absolute -left-10  rounded-sm ">Left</button>
-                        <button className="slider_button px-2 py-1 absolute -right-10 rounded-sm">Right</button>
+                    <div className="project__slider_box flex items-center justify-center relative">
+                        <button onClick={handlePrev} className="slider_button px-2 py-1 absolute -left-10  rounded-xl">
+                            <FaAngleLeft />
+                        </button>
+                        <button onClick={handleNext} className="slider_button px-2 py-1 absolute -right-10 rounded-xl">
+                            <FaChevronRight />
+                        </button>
                     </div>
                     <Swiper
+                        ref={detailSwiper}
                         modules={[Autoplay]}
                         loop={true}
                         autoplay={true}
                         delay={8000}
+                        allowTouchMove={false}
                         className="w-2/4"
                     >
                         {slides.map((slide, index) => (
@@ -49,7 +71,7 @@ const project = () => {
                                         <article className="Article">{slide.description}</article>
                                         <div className="button__conatainer">
                                             <a href={slide.url}><button className=" button git__button">Git</button></a>
-                                            <a href={slide.Live}><button className=" button live__button bg-red-700">Live Link</button></a>
+                                            <a href={slide.Live} target='_blank'><button className=" button live__button bg-red-700">Live Link</button></a>
                                         </div>
                                     </div>
                                 </SwiperSlide>
@@ -60,11 +82,12 @@ const project = () => {
 
                 <div className="project__sub_container flex gap-2 w-4/5 m-auto sm:hidden">
                     <Swiper
-                        modules={[Autoplay, Pagination]}
+                        // ref={detailSwiper}
+                        modules={[Autoplay]}
                         loop={true}
                         autoplay={true}
                         delay={8000}
-                        className="w-full"
+                        className="w-2/4"
                     >
                         {slides.map((slide, index) => (
                             <>

@@ -7,9 +7,13 @@ import { CiDesktopMouse2 } from 'react-icons/ci'
 import { animate, motion } from "framer-motion";
 import { BiLogoLinkedin, BiLogoGithub, BiLogoYoutube, BiLogoInstagram } from 'react-icons/bi';
 import { GrFormPrevious, GrFormNext } from 'react-icons/gr';
+import Theme from '../theme/Theme'
+import { IoIosColorPalette } from "react-icons/io";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 export default function Homebody() {
+    const [darktheme, setDarktheme] = useState(false);
+    const [themetoggle, setthemetoggle] = useState(false);
     const [toggle, setToggle] = useState(false);
     const [showButton, setShowButton] = useState(false);
 
@@ -80,84 +84,92 @@ export default function Homebody() {
 
 
     return (
-        <div id='Home' className='home__container'
-            style={{
-                backgroundImage: `url(${bg_main})`,
-            }}>
-            <div className='transperent__background max-sm:hidden'></div>
-            <a href="#Home"><div className={`return__top  ${showButton ? 'show' : ''}`}>
-                <CiDesktopMouse2 />
-            </div></a>
-
+        <div className=''>
+            {themetoggle ?
+                <Theme darktheme={darktheme} setDarktheme={setDarktheme} themetoggle={themetoggle} setthemetoggle={setthemetoggle} />
+                : null
+            }
             <img src={bg} alt="" className='first_img' />
-            <div className="left__container">
-                <span>
-                    <motion.h3 {...animations.h3}>
-                        Hi. I'm
-                        <span className="text">
-                            <span className="actual-text">&nbsp;Siddhant&nbsp;</span>
-                            <span className="hover-text" style={{ top: "-8px" }} aria-hidden="true">&nbsp;Siddhant&nbsp;</span>
-                        </span>
-                    </motion.h3>
+            <div id='Home' className='home__container'
+                style={{
+                    backgroundImage: `url(${bg_main})`,
+                }}>
+                <div className='theme_button fixed top-1/3 right-0 w-10 h-10 rounded-xl flex items-center justify-center' onClick={() => {
+                    setthemetoggle(true)
+                }}>{themetoggle ? null : <IoIosColorPalette />}</div>
+                <div className='transperent__background max-sm:hidden'></div>
+                <a href="#Home"><div className={`return__top  ${showButton ? 'show' : ''}`}>
+                    <CiDesktopMouse2 />
+                </div></a>
 
-                    <motion.article {...animations.article} className='home__paragraph'>
-                        As a Full Stack Web Developer, I builded a foundation in programming and development concepts. I
-                        am constantly seeking to expand my knowledge and skills in web development.
-                    </motion.article>
-                </span>
 
-                <motion.span  {...animations.button} style={{ display: "flex", alignItems: "center", marginTop: "var(--large-margin)" }}>
-                    <a href="mailto:siddhantsharma9926@gmail.com">
-                        <button className='hire__button'>Hire me
-                            <div className="star star-1">
-                                <BsFillEmojiSmileFill />
+                <div className="left__container">
+                    <span>
+                        <motion.h3 {...animations.h3}>
+                            Hi. I'm
+                            <span className="text">
+                                <span className="actual-text">&nbsp;Siddhant&nbsp;</span>
+                                <span className="hover-text" style={{ top: "-8px" }} aria-hidden="true">&nbsp;Siddhant&nbsp;</span>
+                            </span>
+                        </motion.h3>
+
+                        <motion.article {...animations.article} className='home__paragraph'>
+                            As a Full Stack Web Developer, I builded a foundation in programming and development concepts. I
+                            am constantly seeking to expand my knowledge and skills in web development.
+                        </motion.article>
+                    </span>
+
+                    <motion.span  {...animations.button} style={{ display: "flex", alignItems: "center", marginTop: "var(--large-margin)" }}>
+                        <a href="mailto:siddhantsharma9926@gmail.com">
+                            <button className='hire__button'>Hire me
+                                <div className="star star-1">
+                                    <BsFillEmojiSmileFill />
+                                </div>
+                                <div className="star star-2">
+                                    <BsFillEmojiSmileFill />
+
+                                </div>
+                                <div className="star star-3">
+                                    <BsFillEmojiSmileFill />
+
+                                </div>
+                                <div className="star star-4">
+                                    <BsFillEmojiSmileFill />
+
+                                </div>
+                                <div className="star star-5">
+                                    <BsFillEmojiSmileFill />
+
+                                </div>
+                                <div className="star star-6">
+                                    <BsFillEmojiSmileFill />
+
+                                </div>
+                            </button>
+                        </a>
+
+                        <a href="https://drive.google.com/file/d/1DYuvjGcWqEXskIKF7c14rc8AQiyRy96-/view?usp=drive_link">
+                            <div className='resume__button'>
+                                <div className="button__text">Get CV</div>
                             </div>
-                            <div className="star star-2">
-                                <BsFillEmojiSmileFill />
+                        </a>
 
-                            </div>
-                            <div className="star star-3">
-                                <BsFillEmojiSmileFill />
-
-                            </div>
-                            <div className="star star-4">
-                                <BsFillEmojiSmileFill />
-
-                            </div>
-                            <div className="star star-5">
-                                <BsFillEmojiSmileFill />
-
-                            </div>
-                            <div className="star star-6">
-                                <BsFillEmojiSmileFill />
-
-                            </div>
-                        </button>
-                    </a>
-
-                    <a href="https://drive.google.com/file/d/1DYuvjGcWqEXskIKF7c14rc8AQiyRy96-/view?usp=drive_link">
-                        <div className='resume__button'>
-                            <div className="button__text">Get CV</div>
-                        </div>
-                    </a>
-
-                </motion.span>
-            </div>
-            <div className="right__container"></div>
-            <div className="social__container">
-                <div className='i' onClick={handletoggle}>{!toggle ? < GrFormPrevious /> : < GrFormNext />} </div>
-
-                <div className="social__icons" style={{ display: toggle ? "flex " : "none" }}>
-                    <a href="https://www.linkedin.com/in/siddhantsharma9
-" target='_blank' className='social linkedin' ><BiLogoLinkedin /></a>
-                    <a href="https://github.com/Sidu52?tab=repositories
-" target='_blank' className=' social github'><BiLogoGithub /></a>
-                    <a href="https://www.youtube.com/@Sidhualston/featured" target='_blank' className=' social youtube'><BiLogoYoutube /></a>
-                    <a href="https://www.instagram.com/sidhu_alston/" target='_blank' className=' social instagram'><BiLogoInstagram /></a>
+                    </motion.span>
+                </div>
+                <div className="right__container"></div>
+                <div className="social__container">
+                    <div className='i' onClick={handletoggle}>{!toggle ? < GrFormPrevious /> : < GrFormNext />} </div>
+                    <div className="social__icons" style={{ display: toggle ? "flex " : "none" }}>
+                        <a href="https://www.linkedin.com/in/siddhantsharma9" target='_blank' className='social linkedin' ><BiLogoLinkedin /></a>
+                        <a href="https://github.com/Sidu52?tab=repositories" target='_blank' className=' social github'><BiLogoGithub /></a>
+                        <a href="https://www.youtube.com/@Sidhualston/featured" target='_blank' className=' social youtube'><BiLogoYoutube /></a>
+                        <a href="https://www.instagram.com/sidhu_alston/" target='_blank' className=' social instagram'><BiLogoInstagram /></a>
+                    </div >
                 </div >
-            </div >
 
-            <ToastContainer position="top-right" autoClose={3000} />
+                <ToastContainer position="top-right" autoClose={3000} />
+            </div >
         </div >
+
     )
 }

@@ -17,15 +17,14 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
-        if (name === '') {
+        if (form.name === '') {
             setNameError('Please fill out this field!');
         }
         else {
             setNameError('');
         }
 
-        if (email === '') {
+        if (form.email === '') {
             setEmailError('Please fill out this field!');
         }
         else {

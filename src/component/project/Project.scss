@@ -74,15 +74,13 @@
         }
 
         .project__slider_box {
-            z-index: 1;
-            background-color: var(--heading-primary-color);
+            z-index: 3;
+            // background-color: var(--heading-primary-color);
 
             .slider_button {
                 color: var(--sub-heading-color);
                 background-color: var(--heading-primary-color);
-                backface-visibility: 2px;
                 font-family: var(--font-family-subheading);
-
             }
         }
     }

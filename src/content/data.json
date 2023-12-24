@@ -3,11 +3,20 @@
     "projects": [
       {
         "id":0,
+        "date": "Nov-2023",
+        "title": "Jarvis Voice Assistant",
+        "description": "It is an AI voice assistant created solely for entertainment purposes. This project was developed using MERN technology and is capable of performing various operations. You can find country, state, and city data, access weather information, gather details about a country's population, set alarms, create to-do tasks, and even play audio and video music based on your preferences.",
+        "Live":"https://alstonvoiceassistant.netlify.app",
+        "url": "https://github.com/Sidu52/Voice_Assistant.git",
+        "imgSrc": "https://images.unsplash.com/photo-1605648916361-9bc12ad6a569?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "id":0,
         "date": "March-2023",
         "title": "Alston Social Media ",
-        "description": "This project is a some-featured social media website that allows users to create posts, including photos, videos, and blog posts ",
-        "Live":"https://alston-social-media-u0hk.onrender.com",
-        "url": "https://github.com/Sidu52/Alston_Social_Media.git",
+        "description": "This project is a some-featured social media website that allows users to create posts, including photos, videos, and blog posts.",
+        "Live":"https://siddhantsharmasocialmedia.netlify.app",
+        "url": "https://github.com/Sidu52/Social-media.git",
         "imgSrc": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
       },
   

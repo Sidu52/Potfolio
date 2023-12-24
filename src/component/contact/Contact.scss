@@ -225,7 +225,7 @@ form p {
 
 /* for all social containers*/
 .socialContainer {
-    color: black;
+    color: var(--small-heading-color);
     display: flex;
     align-items: center;
     justify-content: center;
