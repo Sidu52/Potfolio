@@ -58,14 +58,15 @@
                 }
 
                 .live__button {
-                    color: white;
+                    color: var(--sub-heading-color);
+                    background-color: var(--heading--secondary-color);
                     font-family: var(--font-family-subheading);
 
                     &:hover {
-                        color: var(--secondary-color);
+                        color: var(--heading--secondary-color);
                         background-color: transparent;
-                        border: 1px solid var(--secondary-color);
-                        box-shadow: 1px 1px 50px var(--secondary-color);
+                        border: 1px solid var(--heading--secondary-color);
+                        box-shadow: 1px 1px 50px var(--heading--secondary-color);
                     }
 
                 }

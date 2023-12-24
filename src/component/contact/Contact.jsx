@@ -14,7 +14,6 @@ const Contact = () => {
     const templateID = import.meta.env.VITE_TEMPLATE_ID;
     const userID = import.meta.env.VITE_USER_ID;
 
-
     const handleSubmit = (e) => {
         e.preventDefault();
         if (form.name === '') {

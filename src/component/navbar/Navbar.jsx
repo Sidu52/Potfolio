@@ -54,7 +54,7 @@ function Navbar() {
                 {toggle ? (
                     <HiX onClick={() => setToggle(false)} />
                 ) : (
-                    <GiHamburgerMenu onClick={() => setToggle(true)} />
+                    <GiHamburgerMenu className='cancel--icon' onClick={() => setToggle(true)} />
                 )}
             </div>
             {toggle && (

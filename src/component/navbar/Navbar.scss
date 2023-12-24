@@ -18,6 +18,10 @@
 
     .navbar__menuicon {
         display: none;
+
+        .cancel--icon {
+            color: var(--sub-heading-color)
+        }
     }
 
     .navbar__container {

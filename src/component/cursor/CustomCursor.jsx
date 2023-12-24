@@ -25,7 +25,7 @@ const CustomCursor = () => {
   }, [updatePosition]);
 
   return (
-    <div className="custom-cursor" style={{ left: `${position.x}px`, top: `${position.y}px` }}>
+    <div className="custom-cursor max-sm:hidden" style={{ left: `${position.x}px`, top: `${position.y}px` }}>
       <div className='cursor-dot'></div>
     </div>
   );

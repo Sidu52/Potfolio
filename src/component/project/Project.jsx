@@ -80,14 +80,14 @@ const project = () => {
                     </Swiper>
                 </div>
 
-                <div className="project__sub_container flex gap-2 w-4/5 m-auto sm:hidden">
+                <div className="project__sub_container flex gap-2 w-full m-auto sm:hidden">
                     <Swiper
                         // ref={detailSwiper}
                         modules={[Autoplay]}
                         loop={true}
                         autoplay={true}
                         delay={8000}
-                        className="w-2/4"
+                        className="w-full"
                     >
                         {slides.map((slide, index) => (
                             <>

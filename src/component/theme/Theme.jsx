@@ -38,7 +38,7 @@ export default function Theme({ darktheme, setDarktheme, setthemetoggle, themeto
         <div className={`theme__box h-full flex flex-col gap-4 fixed top-0 right-0 z-10 mb-5 pb-10 px-6 overflow-y-scroll ${themetoggle ? 'visible' : 'hidden'}`}>
             <div className='theme__uppder_box flex items-center justify-between py-6'>
                 <span className='theme__heading'>Portfolio</span>
-                <span className=' absolute top-2 right-2' onClick={() => setthemetoggle(false)}><GiCancel /></span>
+                <span className='cancel--icon absolute top-2 right-2 text-xl' onClick={() => setthemetoggle(false)}><GiCancel /></span>
                 <label class="ui-switch">
                     <input type="checkbox" checked={darktheme} />
                     <div class="slider">
